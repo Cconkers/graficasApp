@@ -1,0 +1,18 @@
+<div class="card p-2">
+  <div class="card-header p-2">
+    <h5>Menú de navegación</h5>
+    <div class="card-body p-2">
+      <ul class="list-group">
+        <li
+          *ngFor="let item of menuItem"
+          [routerLink]="[item.ruta]"
+          routerLinkActive="active"
+          class="btn mb-1 list-group-item"
+        >
+          {{ item.nombre }}
+        </li>
+      </ul>
+    </div>
+    <div class="card-footer text-muted text-center">V 1.0.0</div>
+  </div>
+</div>

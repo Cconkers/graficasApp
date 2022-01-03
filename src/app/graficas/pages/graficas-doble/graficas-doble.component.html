@@ -1,0 +1,17 @@
+<h1>Gráficas Dobles</h1>
+<hr />
+<div class="row">
+  <div class="col-md-6">
+    <app-grafica-barra
+      [barChartData]="productoData"
+      [horizontal]="true"
+      (click)="randomize2(proveedoresData.datasets)"
+    ></app-grafica-barra>
+  </div>
+  <div class="col-md-6">
+    <app-grafica-barra
+      [barChartData]="proveedoresData"
+      (click)="randomize1(productoData.datasets[0].data)"
+    ></app-grafica-barra>
+  </div>
+</div>
