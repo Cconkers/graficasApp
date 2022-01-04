@@ -10,6 +10,7 @@ import { DonaComponent } from './pages/dona/dona.component';
 import { DonaHttpComponent } from './pages/dona-http/dona-http.component';
 import { GraficaBarraComponent } from './components/grafica-barra/grafica-barra.component';
 
+
 @NgModule({
   declarations: [
     BarrasComponent,
@@ -18,6 +19,6 @@ import { GraficaBarraComponent } from './components/grafica-barra/grafica-barra.
     DonaHttpComponent,
     GraficaBarraComponent,
   ],
-  imports: [CommonModule, GraficasRoutingModule, NgChartsModule,],
+  imports: [CommonModule, GraficasRoutingModule, NgChartsModule],
 })
 export class GraficasModule {}
