@@ -2,13 +2,13 @@
 <hr />
 
 <div
-  ngif="doughnutChartData === null; else divGrafica"
+  *ngif="doughnutChartData.datasets.length === 0; else divGrafica"
   class="alert alert-info"
 >
   Cargando datos...
 </div>
 
-<div #divGrafica>
+<ng-template #divGrafica class="w-50">
   <div class="row">
     <div class="col">
       <div style="display: block">
@@ -18,4 +18,4 @@
     </div>
   </div>
   <span class="float-end text-primary">Información en billones de usuarios</span>
-</div>
+</ng-template>

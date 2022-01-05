@@ -14,7 +14,7 @@ export class DonaHttpComponent implements OnInit {
   ngOnInit(): void {
     this.GraficasService.getUsuariosSocialesDona().subscribe(
       ({ labels, values }) => {
-        console.log(values)
+        console.log(this.doughnutChartData.datasets.length)
         console.log(labels)
 
         this.doughnutChartLabels = labels;
